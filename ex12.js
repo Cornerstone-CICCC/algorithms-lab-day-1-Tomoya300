@@ -1,6 +1,13 @@
 // Exercise 12: Write a function named 'filterAdults' that takes an array of user objects (each with an 'age' property) and returns a new array with only the users who are 18 or older.
 
 function filterAdults(users) {
+  let result = []
+  for (i = 0; i < users.length; i++) {
+    if (users[i].age >= 18) {
+      result.push(users[i])
+    }
+  }
+  return result
   // your code here
 }
 
